@@ -1,1 +1,13 @@
 /* Odin Recipes Project */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+.navbar-container{
+
+}
+
+.navbar-items {
+    
+}
