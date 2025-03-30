@@ -5,9 +5,32 @@
   }
 
 .navbar-container{
-
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar-items {
-    
+    display: flex;
+    gap:1.5rem;
+    list-style: none;
+}
+
+.submenu ul {
+    display: none;
+    list-style: none;
+    overflow: hidden;
+    position: absolute;
+}
+
+.navbar-items span:hover {
+    display: inline-block;
+    margin:0;
+    padding:0;
+}
+.navbar-items span:hover > ul{
+    display: block;
+    padding:1rem 0;
 }
