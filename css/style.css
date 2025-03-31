@@ -2,7 +2,24 @@
 
 *, *:before, *:after {
     box-sizing: border-box;
+    margin:0;
+    padding:0;
   }
+
+header{
+    background-color: rgba(128,128,0, 0.5);
+    margin: 0;
+    padding: 1.2rem;
+}
+
+footer {
+    background-color: rgba(128, 128, 0, 0.5);
+    position: fixed;
+    bottom:0;
+    text-align: center;
+    padding: 1rem;
+    width:100%;
+}
 
 .navbar-container{
     width: 90%;
@@ -18,11 +35,31 @@
     list-style: none;
 }
 
+.navbar-items a {
+    color:black;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.submenu {
+    text-transform: uppercase;
+    font-weight: 900;
+}
 .submenu ul {
     display: none;
     list-style: none;
     overflow: hidden;
     position: absolute;
+}
+.submenu li {
+    padding: 5px;
+}
+.submenu ul a {
+    color:black;
+    text-decoration: none;
+    margin:2px;
+    z-index: 999;
 }
 
 .navbar-items span:hover {
@@ -32,5 +69,7 @@
 }
 .navbar-items span:hover > ul{
     display: block;
-    padding:1rem 0;
+    padding:1rem;
+    background-color: rgba(128,128,0);
+    margin-top:5px;
 }
